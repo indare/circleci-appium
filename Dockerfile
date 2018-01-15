@@ -7,6 +7,8 @@ RUN sdkmanager \
   "build-tools;23.0.2" \
   "platforms;android-23" \
   "platforms;android-19" \
+  "platforms;android-17" \
+  "add-ons;addon-google_apis-google-17" \
   "add-ons;addon-google_apis-google-19" \
   "add-ons;addon-google_apis-google-23" \
   "system-images;android-19;google_apis;armeabi-v7a"
