@@ -1,0 +1,16 @@
+version: 2
+jobs:
+ build:
+   machine: true
+   steps:
+     - checkout
+     
+     # docker login
+     - run: docker login -u $DOCKER_USER -p $DOCKER_PASS
+
+     # docker build 
+     - run: docker build -t $DOCKER_REPOSITORY:latest .
+
+     # deploy the image
+     - run: docker push $CODKER_REPOSITORY:latest
+
