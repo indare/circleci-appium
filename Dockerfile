@@ -1,6 +1,5 @@
 FROM circleci/android:api-23-node8-alpha
 
-
 USER circleci
 
 # Install Android sdk tools
